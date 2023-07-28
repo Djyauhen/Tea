@@ -1,12 +1,12 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {ProductType} from "../../../types/product.type";
+import {ProductType} from "../../../../types/product.type";
 import {HttpClient} from "@angular/common/http";
 import {ProductsService} from "../../../core/services/products.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {Subscription, switchMap} from "rxjs";
 
 @Component({
-  selector: 'app-products',
+  selector: 'app-product',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.scss']
 })

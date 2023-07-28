@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {AnswerType} from "../../types/answer.type";
+import {AnswerType} from "../../../types/answer.type";
 import {AnswersService} from "../../core/services/answers.service";
 import {delay, Observable, Subscription} from "rxjs";
 

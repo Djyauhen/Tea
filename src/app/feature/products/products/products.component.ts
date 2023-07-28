@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {ProductType} from "../../../types/product.type";
+import {ProductType} from "../../../../types/product.type";
 import {Subscription} from "rxjs";
 import {HttpClient} from "@angular/common/http";
 import {ProductsService} from "../../../core/services/products.service";
@@ -7,10 +7,10 @@ import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-products',
-  templateUrl: './catalog.component.html',
-  styleUrls: ['./catalog.component.scss']
+  templateUrl: './products.component.html',
+  styleUrls: ['./products.component.scss']
 })
-export class CatalogComponent implements OnInit, OnDestroy {
+export class ProductsComponent implements OnInit, OnDestroy {
 
   public products: ProductType[] = [];
   subscription: Subscription | null = null;
