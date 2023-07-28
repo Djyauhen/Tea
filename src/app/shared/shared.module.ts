@@ -5,7 +5,7 @@ import {FooterComponent} from "./footer/footer.component";
 import {AnswersComponent} from "./answer/answers.component";
 import {ProductCardComponent} from "./product-card/product-card.component";
 import {RouterModule} from "@angular/router";
-import {AppRoutingModule} from "../app-routing.module";
+import {NgbAccordionModule} from "@ng-bootstrap/ng-bootstrap";
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import {AppRoutingModule} from "../app-routing.module";
   imports: [
     CommonModule,
     RouterModule,
-    AppRoutingModule
+    NgbAccordionModule
   ],
   exports: [
     AnswersComponent,

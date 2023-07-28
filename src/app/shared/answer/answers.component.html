@@ -1,2 +1,14 @@
-<div class="accordion-header" id="flush-headingFive" (click)="showAnswer()">{{answer.title}}</div>
-<div class="accordion-body" id="accordion-{{i}}">{{answer.body}}</div>
+<div ngbAccordion [closeOthers]="true">
+  <div ngbAccordionItem [collapsed]="answer.title !== 'Собираете ли вы подарочные боксы?'">
+    <h2 ngbAccordionHeader class="text-white">
+      <button ngbAccordionButton  class="bg-primary text-white">{{answer.title}}</button>
+    </h2>
+    <div ngbAccordionCollapse>
+      <div ngbAccordionBody>
+        <ng-template>
+          {{answer.body}}
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>

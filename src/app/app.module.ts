@@ -9,9 +9,6 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {SharedModule} from "./shared/shared.module";
 import {RouterModule} from "@angular/router";
-import {ProductsModule} from "./feature/products/products.module";
-import {OrderModule} from "./feature/order/order.module";
-import {MainModule} from "./feature/main/main.module";
 
 registerLocaleData(localeRu, 'ru')
 
@@ -23,9 +20,6 @@ registerLocaleData(localeRu, 'ru')
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
-    ProductsModule,
-    OrderModule,
-    MainModule,
     NgbModule,
     SharedModule,
     RouterModule,
