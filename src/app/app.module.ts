@@ -1,6 +1,5 @@
 import {LOCALE_ID, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from "@angular/common/http";
@@ -9,11 +8,10 @@ import localeRu from "@angular/common/locales/ru";
 import {ReactiveFormsModule} from "@angular/forms";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {SharedModule} from "./shared/shared.module";
-import {FeatureModule} from "./feature/feature.module";
-import {MainRoutingModule} from "./feature/main/main-routing.module";
-import {ProductsRoutingModule} from "./feature/products/products-routing.module";
-import {OrderRoutingModule} from "./feature/order/order-routing.module";
-import {AnswersComponent} from "./shared/answer/answers.component";
+import {RouterModule} from "@angular/router";
+import {ProductsModule} from "./feature/products/products.module";
+import {OrderModule} from "./feature/order/order.module";
+import {MainModule} from "./feature/main/main.module";
 
 registerLocaleData(localeRu, 'ru')
 
@@ -25,12 +23,12 @@ registerLocaleData(localeRu, 'ru')
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
+    ProductsModule,
+    OrderModule,
+    MainModule,
     NgbModule,
     SharedModule,
-    FeatureModule,
-    MainRoutingModule,
-    ProductsRoutingModule,
-    OrderRoutingModule,
+    RouterModule,
     AppRoutingModule
   ],
   providers: [

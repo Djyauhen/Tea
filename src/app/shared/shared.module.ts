@@ -4,9 +4,8 @@ import {HeaderComponent} from "./header/header.component";
 import {FooterComponent} from "./footer/footer.component";
 import {AnswersComponent} from "./answer/answers.component";
 import {ProductCardComponent} from "./product-card/product-card.component";
-import {RouterLink, RouterLinkActive, RouterModule} from "@angular/router";
-
-
+import {RouterModule} from "@angular/router";
+import {AppRoutingModule} from "../app-routing.module";
 
 @NgModule({
   declarations: [
@@ -15,15 +14,16 @@ import {RouterLink, RouterLinkActive, RouterModule} from "@angular/router";
     AnswersComponent,
     ProductCardComponent
   ],
+  imports: [
+    CommonModule,
+    RouterModule,
+    AppRoutingModule
+  ],
   exports: [
     AnswersComponent,
     HeaderComponent,
     FooterComponent,
     ProductCardComponent
-  ],
-  imports: [
-    CommonModule,
-    RouterModule
   ]
 })
 export class SharedModule { }
