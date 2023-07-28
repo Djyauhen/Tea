@@ -1,12 +1,12 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ProductType} from "../../../types/product.type";
+import {Subscription} from "rxjs";
 import {HttpClient} from "@angular/common/http";
 import {ProductsService} from "../../../core/services/products.service";
 import {Router} from "@angular/router";
-import {Subscription} from "rxjs";
 
 @Component({
-  selector: 'app-catalog',
+  selector: 'app-products',
   templateUrl: './catalog.component.html',
   styleUrls: ['./catalog.component.scss']
 })
